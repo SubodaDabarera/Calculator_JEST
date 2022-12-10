@@ -14,25 +14,6 @@ function App() {
   const [clickedButton, setClickedButton] = useState("");
   const [isClicked, setIsClicked] = useState(false);
 
-  const handleCalculator = (event) => {
-    const bttnName = event.target.name;
-    setIsCalculateClick(true);
-
-    if (bttnName == ADD_BUTTON) {
-      console.log("Adding");
-      setClickedButton(ADD_BUTTON);
-    } else if (bttnName == SUBSTRACTION_BUTTON) {
-      console.log("Substracting");
-      setClickedButton(SUBSTRACTION_BUTTON);
-    } else if (bttnName == DEVIDE_BUTTON) {
-      console.log("Deviding");
-      setClickedButton(DEVIDE_BUTTON);
-    } else if (bttnName == MULTIPLY_BUTTON) {
-      console.log("Multiplying");
-      setClickedButton(MULTIPLY_BUTTON);
-    }
-  };
-
   return (
     <div className="App">
       <div style={{ padding: "2rem" }}>
