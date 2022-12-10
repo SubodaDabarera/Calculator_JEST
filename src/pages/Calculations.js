@@ -46,7 +46,6 @@ const Calculations = ({ valOne, valTwo, clickedButton, isClicked }) => {
     <div>
       <div data-testid="calc-1" style={{ fontSize: 22 }}>
         <label>Total :- </label>
-        <div data-testid = "valOne" >{valOne}</div>
         <label style={{ fontWeight: "bold" }} data-testid = 'totalValue'> {totalValue}</label>
       </div>
     </div>
