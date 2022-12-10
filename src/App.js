@@ -27,6 +27,7 @@ function App() {
               borderRadius: 10,
               border: "1px solid gray",
             }}
+            data-testid="valOneInput"
           />
           <br></br>
           <input
@@ -39,6 +40,7 @@ function App() {
               borderRadius: 10,
               border: "1px solid gray",
             }}
+            data-testid="valTwoInput"
           />
         </div>
         <div style={{ alignItems: "center" }}>
