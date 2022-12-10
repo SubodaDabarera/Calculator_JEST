@@ -31,8 +31,6 @@ const Calculations = ({ valOne, valTwo, clickedButton, isClicked }) => {
     const C_valOne = parseFloat(valOne);
     const C_valTwo = parseFloat(valTwo);
 
-    console.log(C_valOne, C_valTwo);
-
     if (clickedButton == ADD_BUTTON) {
       setTotalValue((C_valOne + C_valTwo).toFixed(2));
     } else if (clickedButton == SUBSTRACTION_BUTTON) {
@@ -48,8 +46,8 @@ const Calculations = ({ valOne, valTwo, clickedButton, isClicked }) => {
     <div>
       <div data-testid="calc-1" style={{ fontSize: 22 }}>
         <label>Total :- </label>
-
-        <label style={{ fontWeight: "bold" }}> {totalValue}</label>
+        <div data-testid = "valOne" >{valOne}</div>
+        <label style={{ fontWeight: "bold" }} data-testid = 'totalValue'> {totalValue}</label>
       </div>
     </div>
   );
